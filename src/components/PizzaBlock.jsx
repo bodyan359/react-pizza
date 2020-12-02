@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 function PizzaBlock({ name, imageUrl, price, types, sizes }) {
-  const availableTypes = ['тонкое', 'традиционное'];
+  const availableTypes = ['ecofree', 'traditional'];
   const availableSizes = [26, 30, 40];
 
   const [activeType, setActiveType] = React.useState(types[0]);
@@ -22,6 +22,7 @@ function PizzaBlock({ name, imageUrl, price, types, sizes }) {
       <img className="pizza-block__image" src={imageUrl} alt="Pizza" />
       <h4 className="pizza-block__title">{name}</h4>
       <div className="pizza-block__selector">
+
         <ul>
           {availableTypes.map((type, index) => (
             <li
@@ -44,13 +45,13 @@ function PizzaBlock({ name, imageUrl, price, types, sizes }) {
                 active: activeSize === index,
                 disabled: !sizes.includes(size),
               })}>
-              {size} см.
+              {size} cm.
             </li>
           ))}
         </ul>
       </div>
       <div className="pizza-block__bottom">
-        <div className="pizza-block__price">от {price} ₽</div>
+        <div className="pizza-block__price">from {price} $</div>
         <div className="button button--outline button--add">
           <svg
             width="12"
@@ -80,7 +81,7 @@ PizzaBlock.propTypes = {
 };
 
 PizzaBlock.defaultProps = {
-  name: '---',
+  name: 'Surprise Pizza',
   price: 0,
   types: [],
   sizes: [],
