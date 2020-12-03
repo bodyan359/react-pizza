@@ -19,11 +19,10 @@ function Home({ items }) {
           />
           <SortPopup 
           onClick={(sortBy) => (sortBy)}
-          items ={[
-            'Popularity',
-            'Alphabetical',
-            'Price'
-          ]}
+          items ={[{name: 'Popularity', type: 'popular'}, 
+          {name: 'Price', type: 'price'},
+          {name: 'Alphabetical', type: 'abc'}
+        ]}
             />
           </div>
         <h2 className="content__title">All Pizza's</h2>

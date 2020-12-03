@@ -3,11 +3,8 @@ import { Route } from 'react-router-dom';
 import axios from 'axios'
 import { Header } from './components';
 import { Home, Cart } from './pages';
-//console.log(logoSvg);
 
 function App() {
-
-const [pizzas, setPizzas] = React.useState([]);
 
 React.useEffect(() => {
   axios.get('http://localhost:3000/db.json').then(({ data }) => {
