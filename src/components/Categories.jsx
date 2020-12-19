@@ -32,12 +32,13 @@ import React from 'react'
 
 // }
 
-function Categories ({items, onClick}) {
+const Categories = React.memo(function Categories ({items, onClickItem}) {
   // useState >>> when i need say that element need something to change
   const [activeItem, setActiveItem] = React.useState(null);
 
   const onSelectItem = (categoriesName) => {
     setActiveItem(categoriesName);
+    onClickItem(categoriesName);
   }
     return (
             <div className="categories">
@@ -57,5 +58,5 @@ function Categories ({items, onClick}) {
           </div>
     );
 }
-
+);
 export default Categories;
