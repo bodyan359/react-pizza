@@ -6,14 +6,14 @@ const SortPopup = React.memo(function SortPopup({ items, activeSortType, onClick
   const [visiblePopup, setVisiblePopup] = React.useState(false);
   const sortRef = React.useRef();
   const activeLabel = items.find((obj) => obj.type === activeSortType).name;
-    console.log('1',activeSortType);
 
   const toggleVisiblePopup = () => {
     setVisiblePopup(!visiblePopup);
   };
 
-  const handleOutsideClick = (e) => {
-    if (!e.path.includes(sortRef.current)) {
+  const handleOutsideClick = (event) => {
+    const path = event.path || (event.composedPath && event.composedPath());
+    if (!path.includes(sortRef.current)) {
       setVisiblePopup(false);
 //      console.log('outside');
     }
