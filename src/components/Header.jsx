@@ -6,11 +6,11 @@ import cart from '../redux/reducers/cart';
 import { useSelector } from 'react-redux';
 
 function Header() {
+
   const { totalPrice, totalCount} = useSelector(({cart}) => ({
     totalPrice: cart.totalPrice,
     totalCount: cart.totalCount,
   }));
-
 
   return (
     <div className="header">

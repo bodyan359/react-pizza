@@ -6,6 +6,7 @@
     export {default as PizzaBlock} from './PizzaBlock';
     export {default as CartItem} from './CartItem';
     export {default as PizzaLoadingBlock} from './PizzaBlock/LoadingBlock';
+    export {default as Footer} from './Footer';
 // import Button from './Button';
 // import Categories from './Categories';
 // import Header from './Header';
