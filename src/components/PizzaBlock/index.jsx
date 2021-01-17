@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Button from '../Button';
 import { addPizzatoCart } from '../../redux/actions/cart';
 
-function PizzaBlock({ id, name, imageUrl, price, types, sizes, onAddPizzaToCart }) {
+function PizzaBlock({ id, name, imageUrl, price, types, sizes, onAddPizzaToCart, addedCount }) {
   const availableTypes = ['ecofree', 'traditional'];
   const availableSizes = [26, 30, 40];
 
@@ -84,7 +84,7 @@ function PizzaBlock({ id, name, imageUrl, price, types, sizes, onAddPizzaToCart 
             />
           </svg>
           <span>Добавить</span>
-          <i>2</i>
+         {addedCount && <i>{addedCount}</i>}
         </Button>
       </div>
     </div>
@@ -97,6 +97,7 @@ PizzaBlock.propTypes = {
   price: PropTypes.number,
   types: PropTypes.arrayOf(PropTypes.number),
   sizes: PropTypes.arrayOf(PropTypes.number),
+  addedCount: PropTypes.number,
 };
 
 PizzaBlock.defaultProps = {
