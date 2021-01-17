@@ -160,10 +160,6 @@
   "babel": {
     "presets": [
       "react-app"
-    ],
-    "devDependencies": {
-      "express": "^4.17.1",
-      "json-server": "^0.16.3"
-    }
+    ]
   }
 }
