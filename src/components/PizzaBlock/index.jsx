@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Button from '../Button';
-import { addPizzatoCart } from '../../redux/actions/cart';
 
 function PizzaBlock({ id, name, imageUrl, price, types, sizes, onAddPizzaToCart, addedCount }) {
   const availableTypes = ['ecofree', 'traditional'];

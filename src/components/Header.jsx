@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logoSvg from '../assets/img/pizza-logo.svg';
 import { Button } from '../components';
-import cart from '../redux/reducers/cart';
 import { useSelector } from 'react-redux';
 
 function Header() {
