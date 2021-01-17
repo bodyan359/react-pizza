@@ -2,7 +2,6 @@
   "name": "react-pizza",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://bodyan359.github.io/react-pizza/",
   "dependencies": {
     "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.2",
@@ -81,9 +80,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "server": "npx json-server --watch public/db.json --port=3001",
-    "deploy":"gh-pages -d build",
-    "predoploy":"npm run build"
+    "server": "npx json-server --watch public/db.json --port=3001"
   },
   "eslintConfig": {
     "extends": [
