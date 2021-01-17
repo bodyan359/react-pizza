@@ -66,7 +66,7 @@ function Home() {
            onClickSortType={onSelectSortType}
             />
           </div>
-        <h2 className="content__title">All Pizza's</h2>
+        <h2 className="content__title">Все пиццы</h2>
         <div className="content__items">
           { isLoaded ?
               items.map((obj) => (

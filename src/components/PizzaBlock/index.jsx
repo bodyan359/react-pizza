@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Button from '../Button';
 
 function PizzaBlock({ id, name, imageUrl, price, types, sizes, onAddPizzaToCart, addedCount }) {
-  const availableTypes = ['ecofree', 'traditional'];
+  const availableTypes = ['Тонкая', 'Грубая'];
   const availableSizes = [26, 30, 40];
 
   const [activeType, setActiveType] = React.useState(types[0]);
@@ -60,13 +60,13 @@ function PizzaBlock({ id, name, imageUrl, price, types, sizes, onAddPizzaToCart,
                 active: activeSize === index,
                 disabled: !sizes.includes(size),
               })}>
-              {size} cm.
+              {size} см.
             </li>
           ))}
         </ul>
       </div>
       <div className="pizza-block__bottom">
-        <div className="pizza-block__price">from {price} грн</div>
+        <div className="pizza-block__price">from {price} грн </div>
         <Button 
         onClick={handleAddPizzaToCart} 
         className="button--add"  
