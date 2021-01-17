@@ -14,13 +14,13 @@ function Cart() {
   });
 
   const onClearCart = () => {
-    if(window.confirm('You rly wanna clear all cart?')) {
+    if(window.confirm('Удалить все с корзины?')) {
     dispatch(clearCart());
     }
   };
   
   const onRemoveItem = (id) => {
-    if(window.confirm('You rly wanna delete ?')){
+    if(window.confirm('Удалить ?')){
       dispatch(removeCartItem(id));
     };
   };
