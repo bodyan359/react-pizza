@@ -5,14 +5,12 @@ import Footer from '../components/Footer';
 
 const NotFound = () => (
   <div>
-      <Header />
+       <center>
     <h1>404 - Not Found!</h1>
-     <center> 
          <Link to="/">
             Go Home
          </Link>
     </center>
-    <Footer />
   </div>
 );
 
