@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Header, Footer } from './components';
-import { Home, Cart } from './pages';
+import { Home, Cart, NotFound } from './pages';
 import { Route } from 'react-router-dom';
 
 
