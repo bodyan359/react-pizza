@@ -13,6 +13,7 @@ function App() {
       <div className="content">
       <Route path="/" component={Home} exact/>
       <Route path="/cart" component={Cart} exact/> 
+      <Route component={NotFound} />
       </div>
     </div>
     <Footer />
