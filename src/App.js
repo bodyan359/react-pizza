@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Header, Footer } from './components';
 import { Home, Cart, NotFound } from './pages';
-import { Route } from 'react-router-dom';
+import { Redirect, Route } from 'react-router-dom';
 
 
 function App() {
@@ -13,7 +13,8 @@ function App() {
       <div className="content">
       <Route path="/" component={Home} exact/>
       <Route path="/cart" component={Cart} exact/> 
-      <Route component={NotFound} />
+      <Route path="/404" component={NotFound} exact />
+      <Redirect to="404"/>
       </div>
     </div>
     <Footer />
