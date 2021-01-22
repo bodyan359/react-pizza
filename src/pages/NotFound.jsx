@@ -10,7 +10,7 @@ function NotFound() {
           Go Home
         </Link>
     </center> 
-</div>
+    </div>
   );
 }
 
