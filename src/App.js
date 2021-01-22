@@ -13,8 +13,8 @@ function App() {
       <div className="content">
         <Switch>
           <Route path="/" component={Home} exact/>
-          <Route path="/cart" component={Cart} exact/> 
-          <Route component={NotFound} exact />
+          <Route path="/cart" component={Cart}/> 
+          <Route component={NotFound} />
         </Switch>
       </div>
     </div>
