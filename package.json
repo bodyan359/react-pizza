@@ -86,7 +86,9 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "server": "node server.js",
-    "json-server": "json-server --watch public/db.json --port=3001"
+    "json-server": "json-server --watch public/db.json --port=3001",
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\""
+
   },
   "eslintConfig": {
     "extends": [
